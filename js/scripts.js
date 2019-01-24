@@ -10,7 +10,9 @@ function translator (input) {
   input.push("way");
 
   } else if (cons.includes(input[0])) {
+  input.push(input[0]);
   input.push("ay");
+  input.shift();
 
   }
   return input.join("");
