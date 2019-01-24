@@ -2,8 +2,8 @@ function translator (input) {
   input=input.split("")
   for (i=0; i<=input.length; i+=1) {
   }
-  if (input[0] === "a" || input[0] === "e" || input[0] === "i" || input[0] === "o" || input[0] === "u"){
-  input.push("ay");
+  if (input[0] === "a", "e", "i", "o", "u"){
+  input.push("way");
 
  } else {
 
