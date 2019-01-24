@@ -1,6 +1,7 @@
 function translator (input) {
   var vowels = ["a","e","i","o","u"];
-  var cons = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z","qu"]
+  var cons = ["b","c","d","f","g","h","j","k","l","m","n","p","q","r","s","t","v","w","x","y","z",]
+  var qu = ["qu"]
   input=input.split("");
   console.log(input);
   //
@@ -9,10 +10,19 @@ function translator (input) {
   if (vowels.includes(input[0])) {
   input.push("way");
 
+
   } else if (cons.includes(input[0])) {
+    if (input[0] === "q") {
+      input.push(input[0])
+      input.push(input[1])
+      input.shift()
+      input.shift()
+      input.push("ay");
+    } else {
   input.push(input[0]);
   input.push("ay");
   input.shift();
+}
 
   }
   return input.join("");
