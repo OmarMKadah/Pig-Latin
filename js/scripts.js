@@ -1,11 +1,15 @@
 function translator (input) {
-  input=input.split("")
-  for (i=0; i<=input.length; i+=1) {
-  }
-  if (input[0] === "a", "e", "i", "o", "u"){
+  var vowels = ["a","e","i","o","u"];
+  input=input.split("");
+  console.log(input);
+  //
+  // for (i=0; i<=input.length; i+=1)
+
+  if (vowels.includes(input[0])) {
   input.push("way");
 
- } else {
+  } else {
+  input.push("ay");
 
  }
   return input.join("");
