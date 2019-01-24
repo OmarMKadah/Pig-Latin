@@ -1,4 +1,6 @@
-
+function translator (input) {
+  return input;
+}
 
 
 $(document).ready(function() {
@@ -6,8 +8,8 @@ $(document).ready(function() {
     event.preventDefault();
 		console.log("submitted")
     var input = ($("input#translate").val());
-    //var result = translator(input);
+    var result = translator(input);
     console.log(input)
-    //$("#result").text(result);
+    $("#result").text(result);
   });
 });
