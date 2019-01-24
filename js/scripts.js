@@ -1,5 +1,10 @@
 function translator (input) {
-  return input;
+  if (input === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
+    return input + "ay";
+
+   } else {
+     return input;
+   }
 }
 
 
