@@ -1,10 +1,14 @@
 function translator (input) {
-  if (input === "a" || input === "e" || input === "i" || input === "o" || input === "u"){
-    return input + "ay";
+  input=input.split("")
+  for (i=0; i<=input.length; i+=1) {
+  }
+  if (input[0] === "a" || input[0] === "e" || input[0] === "i" || input[0] === "o" || input[0] === "u"){
+  input.push("ay");
 
-   } else {
-     return input;
-   }
+ } else {
+
+ }
+  return input.join("");
 }
 
 
